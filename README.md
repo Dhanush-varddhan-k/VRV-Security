@@ -65,8 +65,25 @@ JWT_SECRET=your_jwt_secret
 4.Start the server:
 ```bash
   npm start
+```
 
+### Frontend Setup
 
+1. Navigate to the frontend folder:
+   ```bash
+     cd frontend
+   ```
+
+2.Install dependencies:
+```bash
+     npm install
 
    ```
+3.Start the frontend development server:
+```bash
+     npm start
+
+   ```
+  
+
 
