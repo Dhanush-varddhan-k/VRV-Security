@@ -49,5 +49,9 @@ This project includes:
 1. Navigate to the backend folder:
    ```bash
    cd backend
+   ```
+2.Install dependencies:
+  ```bash
+   npm install
 
-
+   ```
