@@ -12,7 +12,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const { data } = await axios.post('http://localhost:5000/api/users/login', { email, password });
+            const { data } = await axios.post('https://vrv-security-lup9.onrender.com/api/users/login', { email, password });
             localStorage.setItem('token', data.token);
             alert('Login successful');
             if (data.user.role === 'admin') navigate('/admin');
