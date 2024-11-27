@@ -4,6 +4,20 @@ A Role-Based Access Control Dashboard for managing user roles and permissions ef
 
 ![img](/readmeimg/homepage.png)
 
+## credentials for root admin
+
+### Email:
+```bash
+     admin@gmail.com
+
+   ```
+### password:
+```bash
+     admin
+
+   ```
+
+
 This project includes:
 - A **frontend** built with React.
 - A **backend** built with Node.js and Express.
