@@ -17,7 +17,7 @@ const Navbar = () => {
 
             // Notify the backend about logout
             await axios.post(
-                'http://localhost:5000/api/users/logout',
+                'https://vrv-security-lup9.onrender.com/api/users/logout',
                 {},
                 {
                     headers: {
