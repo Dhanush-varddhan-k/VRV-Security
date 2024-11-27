@@ -2,7 +2,7 @@
 
 A Role-Based Access Control Dashboard for managing user roles and permissions effectively. 
 
-![img](/readmeimag/homepage.png)
+![img](/readmeimg/homepage.png)
 
 This project includes:
 - A **frontend** built with React.
