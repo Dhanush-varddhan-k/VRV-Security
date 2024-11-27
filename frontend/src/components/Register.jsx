@@ -20,7 +20,7 @@ const Register = () => {
         e.preventDefault();
         try {
             const data = { ...formData, role: 'user' }; // Default role is user
-            await axios.post('http://localhost:5000/api/users/register', data);
+            await axios.post('https://vrv-security-lup9.onrender.com/api/users/register', data);
             alert('Registration successful! Redirecting to login page.');
             navigate('/login'); // Redirect to login page
         } catch (error) {
