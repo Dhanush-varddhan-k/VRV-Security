@@ -1,0 +1,27 @@
+.home-container {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/earth.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.home-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* White overlay with reduced opacity */
+    z-index: 1; /* Ensures content is above the overlay */
+}
+
+.content {
+    position: relative;
+    z-index: 2; /* Content should be above the overlay */
+    text-align: center;
+}
