@@ -19,6 +19,35 @@ This project includes:
 - **Background watermark** for the homepage.
 
 
-## Project Structure
+## Technologies Used
 
-vrv-security/ ├── backend/ │ ├── config/ # Database configuration │ ├── middleware/ # Authentication middleware │ ├── models/ # Mongoose schemas │ ├── routes/ # API routes │ ├── server.js # Entry point for the backend │ ├── .env # Environment variables (not included in the repository) │ └── package.json # Backend dependencies ├── frontend/ │ ├── public/ # Static assets (e.g., earth.jpeg) │ ├── src/ # React components and pages │ │ ├── components/ # Navbar, dashboards, etc. │ │ ├── pages/ # Home, Login, Register pages │ │ ├── App.js # Main React app │ │ ├── App.css # Global CSS │ └── package.json # Frontend dependencies ├── README.md # Project documentation └── .gitignore # Files and folders to ignore in Git
+### Frontend
+- React
+- Tailwind CSS
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB (with Mongoose)
+
+### Other
+- JWT for authentication
+- bcrypt.js for password hashing
+- Git for version control
+
+
+## Setup Instructions
+
+### Prerequisites
+1. Install **Node.js** and **npm**.
+   - [Download Node.js](https://nodejs.org/)
+2. Install **MongoDB** or use a cloud database like **MongoDB Atlas**.
+   - [MongoDB Installation Guide](https://www.mongodb.com/docs/manual/installation/)
+   - [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
+### Backend Setup
+
+1. Navigate to the backend folder:
+   ```bash
+   cd backend
+
+
