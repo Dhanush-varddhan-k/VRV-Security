@@ -55,3 +55,18 @@ This project includes:
    npm install
 
    ```
+3.Create a .env file with the following contents:
+ ```bash
+   MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+
+
+   ```
+4.Start the server:
+```bash
+  npm start
+
+
+
+   ```
+
