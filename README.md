@@ -123,4 +123,12 @@ The User role is the most basic level of access, designed for general end-users 
 - Intended for interacting with the system as per the assigned permissions.
 
 
+### Login page
+![img](/readmeimg/login.png)
+### Register page
+![img](/readmeimg/register.png)
+### Admin Dashboard
+![img](/readmeimg/admindashboard.png)
+### User page
+![img](/readmeimg/userpage.png)
 
