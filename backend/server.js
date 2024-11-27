@@ -29,7 +29,7 @@ const app = express();
 
 // Updated CORS configuration
 const corsOptions = {
-    origin: 'http://localhost:3000', // Your frontend's URL
+    origin: 'https://vrv-security-umber.vercel.app', // Your frontend's URL
     credentials: true, // Allow credentials
 };
 app.use(cors(corsOptions));
