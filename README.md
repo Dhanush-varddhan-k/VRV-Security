@@ -84,6 +84,41 @@ JWT_SECRET=your_jwt_secret
      npm start
 
    ```
-  
+
+## Role Descriptions
+
+### Root Admin
+The Root Admin is the highest authority in the system and has complete control over all functionalities. This role is unique and usually assigned to a specific individual (e.g., the superuser).
+
+#### Powers and Privileges:
+- Can manage all users, including Admins.
+- Cannot be deleted or modified by any other role, including other Admins.
+- Can create new Admin accounts.
+- Has unrestricted access to all system functionalities.
+- Typically used to initialize and maintain the system at the highest level.
+
+---
+
+### Admin
+The Admin role is a secondary level of authority, responsible for managing general operations and overseeing users.
+
+#### Powers and Privileges:
+- Can create, edit, or delete User accounts.
+- Can assign or update roles for users (except for Root Admin).
+- Cannot delete or modify the Root Admin account.
+- Can view all user information, excluding sensitive details like passwords.
+- Ideal for handling day-to-day operations.
+
+---
+
+### User
+The User role is the most basic level of access, designed for general end-users of the system.
+
+#### Powers and Privileges:
+- Can register and log in to the system.
+- Has access to personalized content based on their role.
+- Cannot manage other users or access administrative settings.
+- Intended for interacting with the system as per the assigned permissions.
+
 
 
