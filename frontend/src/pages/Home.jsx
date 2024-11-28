@@ -16,7 +16,7 @@ const Home = () => {
             className="min-h-screen bg-cover bg-center flex flex-col justify-center items-center"
             style={{ backgroundImage: `url('/earth5.jpg')`,opacity: 0.99,zIndex: -1 }}
         >
-            <h1 className="text-8xl font-bold text-white">Welcome to VRV Security</h1>
+            <h1 className="text-4xl font-bold text-white">Welcome to VRV Security</h1>
             {/* <p className="text-red-400 mt-4">Role-Based Access Control Dashboard</p> */}
         </div>
     );
