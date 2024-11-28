@@ -36,20 +36,57 @@ const Navbar = () => {
         }
     };
 
+    // return (
+    //     <nav className="bg-black text-white fixed top-0 w-full p-4 shadow-md z-50">
+    //         <div className="container mx-auto flex justify-between items-center">
+    //             <h1 className="text-xl font-bold">VRV Security</h1>
+    //             <div className="flex space-x-4">
+    //                 <Link to="/" className="hover:underline">
+    //                     Home
+    //                 </Link>
+    //                 {!isDashboard && (
+    //                     <>
+    //                         <Link to="/login" className="hover:underline">
+    //                             Login
+    //                         </Link>
+    //                         <Link to="/register" className="hover:underline">
+    //                             Register
+    //                         </Link>
+    //                     </>
+    //                 )}
+    //                 {isDashboard && (
+    //                     <button
+    //                         onClick={handleLogout}
+    //                         className="bg-red-600 px-3 py-1 rounded hover:bg-red-700 transition"
+    //                     >
+    //                         Logout
+    //                     </button>
+    //                 )}
+    //             </div>
+    //         </div>
+    //     </nav>
+    // );
+
     return (
-        <nav className="bg-black text-white fixed top-0 w-full p-4 shadow-md z-50">
+        <nav className="bg-black/50 text-white fixed top-0 w-full p-4 shadow-md z-50 backdrop-blur-md">
             <div className="container mx-auto flex justify-between items-center">
-                <h1 className="text-xl font-bold">VRV Security</h1>
+                <h1 className="text-xl font-bold text-[#ffffff]">VRV Security</h1>
                 <div className="flex space-x-4">
-                    <Link to="/" className="hover:underline">
+                    <Link to="/" className="hover:underline text-white">
                         Home
                     </Link>
                     {!isDashboard && (
                         <>
-                            <Link to="/login" className="hover:underline">
+                            <Link
+                                to="/login"
+                                className="hover: text-gray-200 hover:text-blue-400 transition"
+                            >
                                 Login
                             </Link>
-                            <Link to="/register" className="hover:underline">
+                            <Link
+                                to="/register"
+                                className="hover: text-gray-200 hover:text-blue-400 transition"
+                            >
                                 Register
                             </Link>
                         </>
@@ -57,7 +94,7 @@ const Navbar = () => {
                     {isDashboard && (
                         <button
                             onClick={handleLogout}
-                            className="bg-red-600 px-3 py-1 rounded hover:bg-red-700 transition"
+                            className="bg-red-600 px-3 py-1 rounded hover:bg-red-700 transition text-white"
                         >
                             Logout
                         </button>
@@ -66,6 +103,7 @@ const Navbar = () => {
             </div>
         </nav>
     );
+    
 };
 
 export default Navbar;

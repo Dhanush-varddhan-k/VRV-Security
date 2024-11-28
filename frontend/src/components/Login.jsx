@@ -23,9 +23,14 @@ const Login = () => {
     };
 
     return (
-        <div className="flex items-center justify-center h-screen bg-gray-100">
+        // <div className="min-h-screen bg-cover bg-center flex flex-col justify-center items-center"
+        // style={{ backgroundImage: `url('/earth5.jpg')`,zIndex: -1 }}>
+        <div
+        className="flex items-center justify-center h-screen bg-cover bg-center"
+        style={{ backgroundImage: `url('/earth5.jpg')`,zIndex: -1, opacity: 0.95 }}
+    >
             <form className="w-full max-w-md bg-white p-6 rounded-lg shadow-md" onSubmit={handleSubmit}>
-                <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
+                <h2 className="font-serif font-bold text-black text-4xl text-center">Log in</h2>
                 <div className="mb-4">
                     <label className="block mb-2 font-medium">Email</label>
                     <input
@@ -46,12 +51,19 @@ const Login = () => {
                         required
                     />
                 </div>
-                <button
+                {/* <button
                     type="submit"
-                    className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300"
+                    className="w-full bg-blue-800 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300"
                 >
                     Login
-                </button>
+                </button> */}
+                <button
+    type="submit"
+    className="w-full bg-gradient-to-r from-blue-900 to-blue-600 text-white py-3 rounded-2xl font-semibold hover:from-blue-600 hover:to-blue-800 transition duration-800"
+>
+    Login
+</button>
+
             </form>
         </div>
     );

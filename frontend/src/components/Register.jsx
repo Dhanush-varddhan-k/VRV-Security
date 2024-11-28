@@ -29,9 +29,12 @@ const Register = () => {
     };
 
     return (
-        <div className="flex justify-center items-center min-h-screen bg-gray-100">
+        <div
+        className="flex items-center justify-center h-screen bg-cover bg-center"
+        style={{ backgroundImage: "url('/earth5.jpg')" }}
+    >
             <form className="max-w-md w-full p-6 bg-white shadow-md rounded" onSubmit={handleSubmit}>
-                <h2 className="text-2xl font-bold mb-6 text-center">Register</h2>
+                <h2 className="text-4xl font-bold mb-6 text-center">Register</h2>
                 <div className="mb-4">
                     <label className="block mb-2">Name</label>
                     <input
@@ -65,7 +68,13 @@ const Register = () => {
                         required
                     />
                 </div>
-                <button type="submit" className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">Register</button>
+                {/* <button type="submit" className="w-full bg-gradient-to-r from-blue-900 to-blue-600 text-white py-3 rounded-2xl font-semibold hover:from-blue-600 hover:to-blue-800 transition duration-800">Register</button> */}
+                <button
+    type="submit"
+    className="w-full bg-gradient-to-r from-blue-900 to-blue-600 text-white py-3 rounded-2xl font-semibold hover:from-blue-600 hover:to-blue-800 transition-all duration-500 ease-out"
+>
+    Register
+</button>
             </form>
         </div>
     );
