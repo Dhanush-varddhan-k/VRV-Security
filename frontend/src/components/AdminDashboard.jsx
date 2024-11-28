@@ -12,7 +12,7 @@ const AdminDashboard = () => {
     useEffect(() => {
         const fetchUsers = async () => {
             const token = localStorage.getItem('token');
-            const { data } = await axios.get('https://vrv-security-lup9.onrender.com/api/users', {
+            const { data } = await axios.get('http://localhost:5000/api/users', {
                 headers: { Authorization: `Bearer ${token}` },
             });
             setUsers(data);
@@ -28,7 +28,7 @@ const AdminDashboard = () => {
         }
         try {
             const { data } = await axios.post(
-                'https://vrv-security-lup9.onrender.com/api/users/create',
+                'http://localhost:5000/api/users/create',
                 newUser,
                 {
                     headers: { Authorization: `Bearer ${token}` },
@@ -55,7 +55,7 @@ const AdminDashboard = () => {
     
         try {
             // Call the delete API
-            const { data } = await axios.delete(`https://vrv-security-lup9.onrender.com/api/users/${id}`, {
+            const { data } = await axios.delete(`http://localhost:5000/api/users/${id}`, {
                 headers: { Authorization: `Bearer ${token}` },
             });
     
@@ -80,7 +80,7 @@ const AdminDashboard = () => {
         const token = localStorage.getItem('token');
         try {
             await axios.put(
-                `https://vrv-security-lup9.onrender.com/api/users/${id}`,
+                `http://localhost:5000/api/users/${id}`,
                 { role: roleUpdate[id] },
                 { headers: { Authorization: `Bearer ${token}` } }
             );
@@ -127,13 +127,13 @@ const AdminDashboard = () => {
                                     <>
                                         <button
                                             onClick={() => updateRole(user._id)}
-                                            className="w-full bg-gradient-to-r from-blue-900 to-blue-600 text-white py-3 rounded-2xl font-semibold hover:from-blue-600 hover:to-blue-800 transition duration-800"
+                                            className="bg-blue-600 text-white px-2 py-1 mx-1"
                                         >
                                             Update Role
                                         </button>
                                         <button
                                             onClick={() => handleDelete(user._id)}
-                                            className="w-full bg-gradient-to-r from-red-900 to-red-600 text-white py-3 rounded-2xl font-semibold hover:from-red-500 hover:to-red-600 transition duration-800"
+                                            className="bg-red-600 text-white px-2 py-1 mx-1"
                                         >
                                             Delete
                                         </button>
@@ -184,7 +184,7 @@ const AdminDashboard = () => {
                             <td className="border p-2">
                                 <button
                                     onClick={handleCreateUser}
-                                    className="w-full bg-gradient-to-r from-green-900 to-green-600 text-white py-3 rounded-2xl font-semibold hover:from-green-600 hover:to-green-800 transition duration-800"
+                                    className="bg-green-600 text-white px-2 py-1 mx-1"
                                 >
                                     Add User
                                 </button>
@@ -202,7 +202,7 @@ const AdminDashboard = () => {
             {!newUserRow && (
                 <button
                     onClick={() => setNewUserRow(true)}
-                    className="w-full bg-gradient-to-r from-blue-900 to-blue-600 text-white py-3 rounded-2xl font-semibold hover:from-blue-600 hover:to-blue-800 transition duration-800"
+                    className="bg-blue-600 text-white px-4 py-2 mt-4"
                 >
                     + Add User
                 </button>
