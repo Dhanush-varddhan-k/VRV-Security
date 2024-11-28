@@ -12,7 +12,7 @@ const AdminDashboard = () => {
     useEffect(() => {
         const fetchUsers = async () => {
             const token = localStorage.getItem('token');
-            const { data } = await axios.get('http://localhost:5000/api/users', {
+            const { data } = await axios.get('https://vrv-security-lup9.onrender.com/api/users', {
                 headers: { Authorization: `Bearer ${token}` },
             });
             setUsers(data);
@@ -28,7 +28,7 @@ const AdminDashboard = () => {
         }
         try {
             const { data } = await axios.post(
-                'http://localhost:5000/api/users/create',
+                'https://vrv-security-lup9.onrender.com/api/users/create',
                 newUser,
                 {
                     headers: { Authorization: `Bearer ${token}` },
@@ -55,7 +55,7 @@ const AdminDashboard = () => {
     
         try {
             // Call the delete API
-            const { data } = await axios.delete(`http://localhost:5000/api/users/${id}`, {
+            const { data } = await axios.delete(`https://vrv-security-lup9.onrender.com/api/users/${id}`, {
                 headers: { Authorization: `Bearer ${token}` },
             });
     
@@ -80,7 +80,7 @@ const AdminDashboard = () => {
         const token = localStorage.getItem('token');
         try {
             await axios.put(
-                `http://localhost:5000/api/users/${id}`,
+                `https://vrv-security-lup9.onrender.com/api/users/${id}`,
                 { role: roleUpdate[id] },
                 { headers: { Authorization: `Bearer ${token}` } }
             );
