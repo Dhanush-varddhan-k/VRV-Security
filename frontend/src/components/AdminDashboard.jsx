@@ -127,13 +127,13 @@ const AdminDashboard = () => {
                                     <>
                                         <button
                                             onClick={() => updateRole(user._id)}
-                                            className="bg-blue-600 text-white px-2 py-1 mx-1"
+                                            className="w-full bg-gradient-to-r from-blue-900 to-blue-600 text-white py-3 rounded-2xl font-semibold hover:from-blue-600 hover:to-blue-800 transition duration-800"
                                         >
                                             Update Role
                                         </button>
                                         <button
                                             onClick={() => handleDelete(user._id)}
-                                            className="bg-red-600 text-white px-2 py-1 mx-1"
+                                            className="w-full bg-gradient-to-r from-red-900 to-red-600 text-white py-3 rounded-2xl font-semibold hover:from-red-500 hover:to-red-600 transition duration-800"
                                         >
                                             Delete
                                         </button>
@@ -184,7 +184,7 @@ const AdminDashboard = () => {
                             <td className="border p-2">
                                 <button
                                     onClick={handleCreateUser}
-                                    className="bg-green-600 text-white px-2 py-1 mx-1"
+                                    className="w-full bg-gradient-to-r from-green-900 to-green-600 text-white py-3 rounded-2xl font-semibold hover:from-green-600 hover:to-green-800 transition duration-800"
                                 >
                                     Add User
                                 </button>
@@ -202,7 +202,7 @@ const AdminDashboard = () => {
             {!newUserRow && (
                 <button
                     onClick={() => setNewUserRow(true)}
-                    className="bg-blue-600 text-white px-4 py-2 mt-4"
+                    className="w-full bg-gradient-to-r from-blue-900 to-blue-600 text-white py-3 rounded-2xl font-semibold hover:from-blue-600 hover:to-blue-800 transition duration-800"
                 >
                     + Add User
                 </button>
