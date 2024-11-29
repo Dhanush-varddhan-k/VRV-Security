@@ -2,7 +2,7 @@
 
 A Role-Based Access Control Dashboard for managing user roles and permissions effectively.
 
-![img](/readmeimg/homepage.png)
+![img](/readmeimg/home_page.png)
 
 ## credentials for root admin
 
@@ -138,11 +138,11 @@ The User role is the most basic level of access, designed for general end-users 
 
 
 ### Login page
-![img](/readmeimg/login.png)
+![img](/readmeimg/login_page.png)
 ### Register page
-![img](/readmeimg/register.png)
+![img](/readmeimg/register_page.png)
 ### Admin Dashboard
 ![img](/readmeimg/admindashboard.png)
 ### User page
-![img](/readmeimg/userpage.png)
+![img](/readmeimg/user_dashboard.png)
 
